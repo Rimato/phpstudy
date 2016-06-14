@@ -2,7 +2,9 @@
 <?php
 function sqreq($a,$b,$c)
 {
-    $desc = $b*$b - 4*$a*$c;
+    $desc = $b*$b - 4*$a*$c; # Считаем дескриминант
+  
+    # -- Вывод уравнения --
     echo "Уравнение: ";
     echo $a.'x<sup>2</sup>';
     if($b<0)
@@ -15,17 +17,19 @@ function sqreq($a,$b,$c)
     } else  echo '+'.$c;
      echo '<br>';
      echo '<br>';
-    echo "Дескриминант: $desc";
+    # -- /Вывод уравнения --
+     
+    echo "Дескриминант: $desc"; #Вывод дескриминанта
     echo '<br>';
     echo '<br>';
     
-    if($desc<0)
+    if($desc<0) #Проверка дискриминанта
     {
         return 'Desc<0';
     } else
     {
         
-        
+        #Вычисление корней
         $x1 = (($b*(-1))+sqrt($desc))/($a*2);
         
         $x2 = (($b*(-1))-sqrt($desc))/($a*2);
@@ -37,7 +41,7 @@ function sqreq($a,$b,$c)
     }
 }
 
-echo sqreq(2, 5, -3);
+echo sqreq(2, 5, -3); 
 
 
 
