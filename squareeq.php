@@ -1,5 +1,5 @@
-
 <?php
+
 function sqreq($a,$b,$c)
 {
     $desc = $b*$b - 4*$a*$c;
@@ -39,6 +39,3 @@ function sqreq($a,$b,$c)
 
 echo sqreq(2, 5, -3);
 
-
-
-?>
