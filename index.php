@@ -1,6 +1,6 @@
 
 <?php
 
-echo 2;
+echo "Changed file Index.php for commit";
 
 ?>
